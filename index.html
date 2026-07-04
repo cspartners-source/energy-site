@@ -341,5 +341,174 @@ Messenger
 
     </form>
 </section>
+  <!-- CHATBOT -->
+
+<style>
+
+#chatBtn{
+position:fixed;
+bottom:25px;
+right:25px;
+width:70px;
+height:70px;
+border-radius:50%;
+background:#0d6efd;
+color:white;
+font-size:32px;
+display:flex;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+#chatBox{
+
+position:fixed;
+
+bottom:110px;
+
+right:25px;
+
+width:330px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+display:none;
+
+overflow:hidden;
+
+z-index:9999;
+
+font-family:Arial;
+
+}
+
+#chatHeader{
+
+background:#0d6efd;
+
+color:white;
+
+padding:18px;
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+.chatItem{
+
+display:block;
+
+padding:15px 20px;
+
+border-bottom:1px solid #eee;
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:bold;
+
+transition:.2s;
+
+}
+
+.chatItem:hover{
+
+background:#f4f4f4;
+
+}
+
+</style>
+
+<div id="chatBtn">
+
+💬
+
+</div>
+
+<div id="chatBox">
+
+<div id="chatHeader">
+
+👋 Energy Advisor AI
+
+</div>
+
+<a class="chatItem" href="#form">
+
+⚡ Δωρεάν Έλεγχος Λογαριασμού
+
+</a>
+
+<a class="chatItem"
+
+href="https://wa.me/306970423747"
+
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<a class="chatItem"
+
+href="https://forms.gle/5Vjv8QH6XG8TbesS8"
+
+target="_blank">
+
+🤝 Γίνε Συνεργάτης
+
+</a>
+
+<a class="chatItem"
+
+href="tel:+306970423747">
+
+📞 Κάλεσέ με
+
+</a>
+
+<a class="chatItem"
+
+href="mailto:cs.e.advisor.g@gmail.com">
+
+📧 Email
+
+</a>
+
+</div>
+
+<script>
+
+const btn=document.getElementById("chatBtn");
+
+const box=document.getElementById("chatBox");
+
+btn.onclick=()=>{
+
+box.style.display=
+
+box.style.display=="block"
+
+?
+
+"none"
+
+:
+
+"block";
+
+}
+
+</script>
 </body>
 </html>
